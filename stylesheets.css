@@ -1,11 +1,152 @@
 @media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+  and (max-width: 480px) 
+  and (max-width: 1025px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  
+ {
+   
+   html {
+     max-width:100vw !important;
+     scroll-padding-top:14rem;
+   }
+ 
     img {
-      height:50%;
-      width:auto;
+      height:50px !important;
+      width:auto !important;
     }
+    
+    #header {
+    width:100% !important;
+    height:140px;*
+    }
+    
+    #header-img {
+     height:20px;
+     width:auto;
+     margin-top:50px;
+    }
+    
+    .logo{
+      width:100%;
+      height:auto;
+    }
+   
+   h1 {
+  font-size:1.2rem !important;
+  margin-top:120px !important;
+   }
+   
+   h3 {
+  text-align:center !important; 
+  margin-top:30px !important;
+   }
+    
+    body {
+    width:100vw;
+    margin:0 !important;
+    /*position: relative;*/
+    }
+    
+    p, #pricing {
+      font-size:10px;
+    }
+       
+    
+    img#product {
+      height:120px !important;
+      width:auto;
+      display:block !important;
+      margin-top:20px !important;
+      margin-left:auto !important;
+      margin-right:auto !important;
+      float:none !important;
+    }
+   
+   img#wetsuits {
+   height:135px !important;
+   width:auto;
+   display:block !important;
+   margin-top:20px !important;
+   margin-left:auto !important;
+   margin-right:auto !important;
+   float:none !important;  
+   }
+   
+   #products, h3, fa-solid fa-person-swimming {
+     font-size:10px !important;
+     text-align:left !important;
+     margin-bottom:10px;
+   }
+   
+   #Features {
+     margin-top:170px !important;
+   }
+   
+   #text {
+   margin-top:10px !important;
+   text-align:left;
+   line-height: normal !important;
+   }
+   
+   #Demo {
+     margin-top:35px !important;
+   }
+    
+    #Pricing {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1em;
+    grid-row-gap: 100px;
+    font-size:10px;
+   
+    }
+    
+    .pricing {
+      margin:2px;
+      font-size:7px;
+      width:100%;
+    }
+    
+    .top {
+      font-size:xx-small !important;
+      top:0;
+    }
+   
+    
+    a.nav-link {
+ margin-left:5px !important;
+ font-size:smaller !important;
+    }
+   
+   #nav-bar {
+margin-left:50px !important;
+   }
+   
+   #demo {
+     margin:10px !important;
+     text-align:center !important;
+   }
+   
+   #video {
+     max-width: 50% !important;
+     height:auto;
+     display:block;
+     margin:auto;
+   } 
+   
+    
+   #btn2, #btn3 {
+     margin-top:48px !important;
+   }
+   
+   label, input#email{
+     margin-bottom:7px;
+   }
+   
+   footer {
+      width:100% !important;
+    }
+   
 }
    
    
@@ -17,13 +158,20 @@ scroll-padding-top:14rem;
 }
 
 body {
-padding-top:20px;
+padding-top:30px;
+width:100%;
+height:100vh;
+margin:0;
+}
+
+.grab {
+  cursor: -webkit-grab; 
 }
 
 #header {
   background-color:#b6bf00;
   height:180px;
-  width:100%;
+  width:100vw;
   position:fixed;
   top:0;
   left:0;
@@ -38,19 +186,25 @@ padding-top:20px;
 }
 
 #title {
+position:relative;
 text-align:center;
-margin-top:35px;
+top:2px;
 color:#0f3348;
 font-family:Vivaldi, sans-serif;
-font-size:1.8em;
+font-size:1.8em !important;
+}
+
+h1 {
+  font-size:1.8em;
 }
 
 a.nav-link {
 text-decoration:none;
 margin-left:50px;
-color:#2792a5;
+color:#0f3348;
 font-family:"Segoe Print", sans-serif;
 font-weight:bold;
+font-size:1.12em;
 }
 
 #nav-bar {
@@ -59,59 +213,63 @@ font-weight:bold;
  position:relative;
 }
 
+
 h3 {
   font-family:"Bell MT", sans-serif;
-  font-size:1.5em;
+  font-size:1.8em;
   margin-left:150px; 
   margin-top:160px;
 }
 
 
 #product {
- height: 200px;
+ height: 290px;
   width: auto;
-  float:right;
-  margin-right:330px;
   border-radius:4px;
   border:3px inset yellow;
   margin-top:-5px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
 }
 
+
+
 #wetsuits {
-  height: 220px;
+  height: 290px;
   width: auto;
-  float:right;
-  margin-right:330px;
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
   border-radius:4px;
   border:3px inset yellow;
-  margin-top:-13px;
+  margin-top:-5px;
 }
 
 
 
 #text {
   text-align:center;
-  font-family:Calibri;
+  font-family:Verdana, sans-serif;
   margin-top:-13px;
+  line-height:26pt;
 }
 
 #variety {
-margin-top:280px;  
+margin-top:340px; 
 }
 
-.video {
-  margin-top:15px;
-  margin-left:360px;
-}
 
 #video {
   border:3px outset yellow;
+  display: block;
+  margin: 0 auto;
 }
 
 #demo {
-  margin-top:270px;
+  margin-top:380px;
   font-family:"Bell MT", sans-serif;
-  font-size:1.5em;
+  font-size:1.8em;
   margin-left:150px;
 }
 
@@ -136,7 +294,7 @@ margin: 10px;
 
 .top {
 font-family:"Colonna MT", sans-serif;
-  font-size:1.3em;
+  font-size:1.7em;
   background-color:#073763;
   width:100%;
   height:40px;
@@ -147,25 +305,27 @@ font-family:"Colonna MT", sans-serif;
 .price {
   font-family:"Times New Roman", serif;
   font-weight:bold;
-  font-size:1.15rem;
+  font-size:1.5rem;
 }
 
 .btn {
-  margin-top:5px;
-  margin-bottom:5px;
+  margin-bottom:5px !important;
   background-color:#0c343d;
   color:#FFFF8A;
-  height:25px;
-  font-family:Arial;
+    height: 35px;
+    width: 80px;
+    font-family: Arial;
+    font-size: 1.12em;
   border-radius:4px;
 }
 
 #btn1 {
-  margin-top:52px;
+  margin-top:78px;
 }
 
 #btn2 {
   margin-top:34px;
+
 }
 
 #btn3{
@@ -175,6 +335,7 @@ font-family:"Colonna MT", sans-serif;
 .description {
   margin-top:10px;
   margin-bottom:10px;
+  font-size:1.2em;
 }
 
 #form {
@@ -187,7 +348,34 @@ font-family:"Colonna MT", sans-serif;
 footer {
   background-color:#b6bf00;
   text-align:center;
-  padding-top:17px;
+  padding-top:19px;
   color:#0c343d;
   height:40px;
+  width:100%;
+  font-style:italic;
+}
+
+label {
+font-family: "Segoe Print", sans-serif;
+font-size:1.3em;
+margin-right:5px;
+}
+
+input#email {
+height:25px;
+width:270px;
+font-size:1.1em;
+}
+
+#submit {
+  height:40px;
+  width:80px;
+  font-size:1.12em;
+  border-radius:6px;
+  font-family:"Segoe Print", sans-serif;
+  margin-left:5px;
+}
+
+#footerlink{
+  color:navy;
 }
